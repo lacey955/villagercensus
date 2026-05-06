@@ -116,17 +116,17 @@
 					<header class="major">
 						<h1>Q2: Style over Substance</h1>
 					</header>
-					<p>There are 35 different species of animal that a villager can be. Cubs, in this case, are a smaller version of bears. Cows and bulls are technically the same species, but the former can only be female, and the latter male.</p>
+					<p>Each villager has a two "styles", a primary and secondary preference. This means that the order of style does matter- a villager with Cute/Cool style 1/2 won't prefer the same things the same way as a villager with Cool/Cute. This makes an ideal setup for a pivot table, as styles 1 and 2 can be placed on different axes.</p>
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/pop_median.png" alt="" /></span>
-							<h3>Overall</h3>
-							<p>The box plot is helpful in determining the range of popularity and which species may have outliers- for example, Agnes ranks 81, while the second-most popular pig, Gala, is all the way at 216. In contrast, Tipper the cow ranks 183, but the cow below her in last place, Naomi, is all the way at 352!</p>
+							<span class="image fit"><img src="images/style.png" alt="" /></span>
+							<h3>Combinations</h3>
+							<p>This is a heat map of the average popularity of the aforementioned style combinations, with a lighter color corresponding to a higher rank. Despite using Cute/Cool as my example, the two styles surprisingly never intersect, leading to empty cells. Gorgeous/Simple is a very clear favorite, for reasons that will be discussed at the end.</p>
 						</div>
 						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/pop_mean.png" alt="" /></span>
-							<h3>Average</h3>
-							<p>This graph is a followup to the previous, exploring the average popularity of each species, rather than the median. Octopi, with their small range and overall high popularity, are unsurprisingly the most popular on average. Meanwhile, notable outliers in species like pigs or cows only slightly affect the average.</p>
+							<span class="image fit"><img src="images/style_avg.png" alt="" /></span>
+							<h3>Individual Averages</h3>
+							<p>This chart lays out the popularity of each style, as a primary and secondary style, as well as the average of the two. Cute and Active are the only two styles that are more popular as a primary style, even though they're the most and least popular primary styles respectively.</p>
 						</div>
 						</div>
 					</div>
@@ -137,19 +137,19 @@
 			<section id="personality" class="main style1 special">
 				<div class="container">
 					<header class="major">
-						<h1>Q1: King of the Jungle</h1>
+						<h1>Q3: What's Inside</h1>
 					</header>
-					<p>What <strong>styles</strong>, in what <strong>combination</strong>, are the most preferred?</p>
+					<p>Each villager has one of four personality types available to their gender, with eight types in total. There's Peppy, Snooty, Normal (Sweet), and Big Sister (Uchi) for females, and Jock, Cranky, Lazy, and Smug for males.p>
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/pop_median.png" alt="" /></span>
-							<h3>Overall</h3>
-							<p>The box plot is helpful in determining the range of popularity and which species may have outliers- for example, Agnes ranks 81, while the second-most popular pig, Gala, is all the way at 216. In contrast, Tipper the cow ranks 183, but the cow below her in last place, Naomi, is all the way at 352!</p>
+							<span class="image fit"><img src="images/pers_pie.png" alt="" /></span>
+							<h3>Quantity</h3>
+							<p>This chart is self-explanatory- the more villagers there are with a certain personality, the bigger the slice of the pie. Easy!</p>
 						</div>
 						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/pop_mean.png" alt="" /></span>
-							<h3>Average</h3>
-							<p>This graph is a followup to the previous, exploring the average popularity of each species, rather than the median. Octopi, with their small range and overall high popularity, are unsurprisingly the most popular on average. Meanwhile, notable outliers in species like pigs or cows only slightly affect the average.</p>
+							<span class="image fit"><img src="images/pers_bar.png" alt="" /></span>
+							<h3>Average Popularity</h3>
+							<p>Big Sister and Smug having notably smaller percentages in both graphs is unsurprising, as they were only added in the second-most recent installation in the series, New Leaf. Otherwise, the distribution is relatively even, although Peppy is slightly behind. Notably, three out of the four female personalities are the most popular, while the fourth, Snooty, is the least.</p>
 						</div>
 						</div>
 					</div>

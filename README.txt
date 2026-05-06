@@ -20,8 +20,8 @@ aj@lkn.io | @ajlkn
 
 Credits:
 
-	Demo Images:
-		Unsplash (unsplash.com)
+	Wallpaper:
+		Ashaife (https://ko-fi.com/post/Animal-Crossing-Leaf-Wallpapers-N4N51I7CL)
 
 	Icons:
 		Font Awesome (fontawesome.io)

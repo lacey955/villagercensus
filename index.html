@@ -21,13 +21,13 @@
 					<h1><strong>The Villager Census</strong></h1>
 					<p>What makes certain Animal Crossing characters more popular than others?</p>
 					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
+						<li><a href="#one" class="button scrolly">Let's go!</a></li>
 					</ul>
 				</div>
 			</section>
 
 		<!-- One -->
-			<section id="one" class="main style1">
+			<section id="bg" class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
@@ -44,14 +44,34 @@
 			</section>
 
 		<!-- Two -->
+			<section id="setup" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Setup and Cleaning</h2>
+					</header>
+					<p>Before we start, let's organize our data.</p>
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<h3>Setup</h3>
+							<p>The "villagers" table columns that I will be using are each villager's name, species, gender, personality from 1 of 8 options, hobby (idle animation), birthday, catchphrase (short phrases that they say at the end of sentences), favorite song, and two columns for their style, which determines what they wear and like to receive. I'll be combining this with a separate dataset of an aggregated popularity ranking of the villagers, which not only lists their individual rank, but divides the list into groups for easier sorting.</p>
+						</div>
+						<div class="col-6 col-12-medium">
+							<h3>Data Cleaning</h3>
+							<p>It turns out that the ranking column in the initial rankings CSV only had the villagers ranked in their tiers, and not as a whole- so there were 6 number 1s, which caused a whole host of issues. I preserved this column as "TierRank", and added "Overall Rank" for the rankings as a whole. (I ended up not using the tiers, since they were completely arbitrary and not helpful.) I also had to adjust the column headers in the villagers CSV, as SQL won't take titles with spaces in them.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section id="two" class="main style2">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bolt"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
+								<li><span class="icon solid style1 major fa-paw"></span></li>
+								<li><span class="icon solid style2 major fa-hat-cowboy"></span></li>
+								<li><span class="icon solid style3 major fa-person-burst"></span></li>
+								<li><span class="icon solid style3 major fa-question"></span></li>
 							</ul>
 						</div>
 						<div class="col-6 col-12-medium">
@@ -61,6 +81,7 @@
 							<p>What <strong>species</strong> are the most popular, on average and overall?</p>
 							<p>What <strong>styles</strong>, in what <strong>combination</strong>, are the most preferred?</p>
 							<p>Which <strong>personality</strong> appears the most, and is it favored?</p>
+							<p><strong>What does all of this mean?</strong></p>
 						</div>
 					</div>
 				</div>
@@ -70,32 +91,20 @@
 			<section id="three" class="main style1 special">
 				<div class="container">
 					<header class="major">
-						<h2>Adipiscing amet consequat</h2>
+						<h1>King of the Jungle</h1>
 					</header>
-					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+					<p>What <strong>species</strong> are the most popular, on average and overall?</p>
 					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
+						<div class="col-6 col-12-medium">
 							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
 							<h3>Magna feugiat lorem</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
 						</div>
-						<div class="col-4 col-12-medium">
+						<div class="col-6 col-12-medium">
 							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
 							<h3>Magna feugiat lorem</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
 						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
 							</ul>
 						</div>
 					</div>
